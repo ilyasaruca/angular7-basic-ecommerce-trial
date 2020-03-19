@@ -1,0 +1,78 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Asus ZenBook",
+      "price": 8477,
+      "categoryId": 1,
+      "description": "UX334FL-A4047T",
+      "imageUrl": "https://cdn.akakce.com/asus/asus-zenbook-ux334fl-a4047t-i7-8565u-16-gb-256-gb-ssd-mx250-13-3-full-hd-z.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Huawei P20 Lite",
+      "price": 1529,
+      "categoryId": 2,
+      "description": "Huawei P20 Lite 64 GB",
+      "imageUrl": "https://productimages.hepsiburada.net/s/19/551/9826976137266.jpg"
+    },
+    {
+      "id": 3,
+      "name": "HP Pavillion Oyun Bilgisayarı",
+      "price": 4895,
+      "categoryId": 1,
+      "description": "HP Pavillion, 15.6",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81uVtcLch3L._AC_SX355_.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Samsung Galaxy Z Flip",
+      "price": 14499,
+      "categoryId": 2,
+      "description": "(Samsung Türkiye Garantili)",
+      "imageUrl": "https://productimages.hepsiburada.net/s/36/551/10510518714418.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Lenovo ThinkPad Yoga X1",
+      "price": 22102,
+      "categoryId": 1,
+      "description": "20LD003JTX",
+      "imageUrl": "https://productimages.hepsiburada.net/s/35/551/10470508396594.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Samsung Galaxy Note 10",
+      "price": 8559,
+      "categoryId": 2,
+      "description": "(Samsung Türkiye Garantili)",
+      "imageUrl": "https://productimages.hepsiburada.net/s/30/551/10290216206386.jpg"
+    },
+    {
+      "name": "Samsung Galaxy Note 5",
+      "description": "(İthalatçı Garantili)",
+      "price": "2198",
+      "categoryId": "2",
+      "imageUrl": "https://www.lamonde.com/pub/media/catalog/product/placeholder/default/Lamonde_-_Image_-_No_Product_Image_4.png",
+      "id": 7
+    },
+    {
+      "name": "Nokia 3310",
+      "description": "Nokia 3310 Cep Telefonu",
+      "imageUrl": "https://productimages.hepsiburada.net/s/5/551/9679247835186.jpg",
+      "price": "350",
+      "categoryId": "2",
+      "id": 8
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Bilgisayar"
+    },
+    {
+      "id": 2,
+      "name": "Cep Telefonu"
+    }
+  ]
+}

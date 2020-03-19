@@ -1,0 +1,38 @@
+<h3>Yeni Ürün Ekle - Reactive</h3>
+<form [formGroup]="productAddForm" (ngSubmit)="add()">
+    <div class="form-group">
+        <input type="text" id="name" name="name" class="form-control" formControlName="name" placeholder="Ürün adı">
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('name').hasError('required') && productAddForm.get('name').dirty">Ürün adı
+            gereklidir!</div>
+    </div>
+    <div class="form-group">
+        <input type="text" id="description" name="description" class="form-control" formControlName="description"
+            placeholder="Ürün açıklaması">
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('description').hasError('required') && productAddForm.get('description').dirty">
+            Ürün açıklaması gereklidir!</div>
+    </div>
+    <div class="form-group">
+        <input type="text" id="imageUrl" name="imageUrl" class="form-control" formControlName="imageUrl"
+            placeholder="Ürün görseli">
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('imageUrl').hasError('required') && productAddForm.get('imageUrl').dirty">Ürün
+            görseli gereklidir!</div>
+    </div>
+    <div class="form-group">
+        <input type="text" id="price" name="price" class="form-control" formControlName="price"
+            placeholder="Ürün fiyatı">
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('price').hasError('required') && productAddForm.get('price').dirty">Ürün fiyatı
+            gereklidir!</div>
+    </div>
+    <div class="form-group">
+        <select class="form-control" formControlName="categoryId" required id="categoryId" name="categoryId">
+            name="categoryId">
+            <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+        </select>
+        <div *ngIf="productAddForm.get('categoryId').hasError('required') && productAddForm.get('categoryId').touch" class="alert alert-danger">Ürün kategorisi gereklidir!</div>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="productAddForm.invalid">Ürün Ekle</button>
+</form>
